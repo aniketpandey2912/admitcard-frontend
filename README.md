@@ -25,6 +25,16 @@
 ### Paste `npm run server`
 
 ### Run both Frontend and backend in parallel
+
 ** Enter valid details, you can follow below pictures **
 
-<!-- <p align="center"><img src="https://user-images.githubusercontent.com/110104542/221482200-6a080f16-cfc0-442e-b61c-1567631b11c6.jpg" alt="project-image" width="300" height="150/"></p> -->
+<p align="center"><img src="./readme_images/1.png" alt="project-image"></p>
+<p align="center"><img src="./readme_images/2.png" alt="project-image"></p>
+<p align="center"><img src="./readme_images/3.png" alt="project-image"></p>
+
+#### For Code Base, checkout repos :
+
+| Team members       | Github-profiles                                               |
+| ------------------ | ------------------------------------------------------------- |
+| Frontend Repo Link | <https://github.com/aniketpandey2912/admitcard-frontend>      |
+| Backend Repo Link  | <https://github.com/aniketpandey2912/admitcard-backend-mysql> |
