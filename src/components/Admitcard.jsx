@@ -25,7 +25,7 @@ const Admitcard3 = ({ ...user }) => {
   return (
     <Document>
       <Page style={styles.page}>
-        <Text style={styles.heading}>Vikalp Test Admitcard</Text>
+        <Text style={styles.heading}>Vikalpa Test Admitcard</Text>
         <View style={styles.rows}>
           <Text>Name</Text>
           <Text>{user.name || "NA"}</Text>
