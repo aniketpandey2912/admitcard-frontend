@@ -6,8 +6,12 @@ import {
   VStack,
   useToast,
 } from "@chakra-ui/react";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { admitCardApi } from "./apis";
+import { formValidation } from "./utils";
+import Admitcard from "./Admitcard";
+
+import { PDFDownloadLink } from "@react-pdf/renderer";
 
 const initState = {
   name: "",
@@ -19,8 +23,10 @@ const initState = {
 };
 
 const Form = () => {
+  const [admitcardInfo, setAdmitcardInfo] = useState({});
   const [formData, setFormData] = useState(initState);
   const [loading, setLoading] = useState(false);
+  const [generate, setGenerate] = useState(false);
   const toast = useToast();
   const formInputs = [
     {
@@ -32,7 +38,7 @@ const Form = () => {
     },
     {
       id: 2,
-      type: "tel",
+      type: "text",
       name: "phone",
       placeholder: "phone no.",
       value: formData.phone,
@@ -69,34 +75,40 @@ const Form = () => {
 
   const handleChange = (e) => {
     const { name, value, type } = e.target;
-    console.log(name, value, type);
-    setFormData({
-      ...formData,
-      [name]: type === "number" || type === "tel" ? +value : value,
-    });
+    const val = type === "number" ? +value : value;
+    setFormData({ ...formData, [name]: val });
   };
 
-  const handleSubmit = () => {
+  const handleSubmit = async () => {
     let valid = formValidation(formData);
     if (valid.status) {
       setLoading(true);
       admitCardApi(formData)
         .then((res) => {
-          console.log(res);
+          // console.log("response", res);
+          if (res.status) {
+            toast({
+              title: res.mssg,
+              status: "success",
+              duration: 3000,
+              isClosable: true,
+              position: "top",
+            });
+            setAdmitcardInfo(res.admitcardInfo);
+            setGenerate(true);
+          } else {
+            toast({
+              title: res.mssg,
+              status: "error",
+              duration: 9000,
+              isClosable: true,
+              position: "top",
+            });
+          }
         })
         .finally(() => {
           setLoading(false);
         });
-      setTimeout(() => {
-        setLoading(false);
-        toast({
-          title: "Account created.",
-          status: "success",
-          duration: 3000,
-          isClosable: true,
-          position: "top",
-        });
-      }, 3000);
     } else {
       toast({
         title: valid.mssg,
@@ -108,15 +120,9 @@ const Form = () => {
     }
   };
 
-  const formValidation = (data) => {
-    for (let k in data) {
-      if (data[k] === "") {
-        return { status: false, mssg: "All fields are required" };
-      }
-    }
-
-    return { status: true };
-  };
+  useEffect(() => {
+    setGenerate(false);
+  }, []);
 
   return (
     <Box w="100%" textAlign="center">
@@ -147,6 +153,25 @@ const Form = () => {
           Submit
         </Button>
       </VStack>
+
+      {generate && (
+        <Box my="20px">
+          <PDFDownloadLink
+            document={<Admitcard {...admitcardInfo} />}
+            fileName="admitcard.pdf"
+          >
+            {({ loading, error }) =>
+              loading ? (
+                <Button colorScheme="gray">Documnet Loading...</Button>
+              ) : (
+                <Button colorScheme="blue">Download</Button>
+              )
+            }
+          </PDFDownloadLink>
+        </Box>
+      )}
+
+      {generate && <Admitcard {...admitcardInfo} />}
     </Box>
   );
 };
