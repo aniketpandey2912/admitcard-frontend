@@ -30,9 +30,9 @@ Paste `npm run server`
 
 ** Enter valid details, you can follow below pictures **
 
-<img src="./readme_images/1.png" alt="project-image" width="500" height="350 />
-<img src="./readme_images/2.png" alt="project-image" width="500" height="350 />
-<img src="./readme_images/3.png" alt="project-image" width="500" height="350 />
+<p><img src="./readme_images/1.png" alt="form-image" width="500" height="350 /></p>
+<p><img src="./readme_images/2.png" alt="details-image" width="500" height="350 /></p>
+<p><img src="./readme_images/3.png" alt="pdf-image" width="500" height="350 /></p>
 
 ### 🌐For Code Base, checkout repos 👇
 
