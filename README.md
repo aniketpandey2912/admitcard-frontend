@@ -1,14 +1,14 @@
 ### How to go about project.
 
-##### Clone the frontend repo
+### Clone the frontend repo
 
 Paste `git clone https://github.com/aniketpandey2912/admitcard-frontend.git` in terminal.
 
-##### Install packages
+#### Install packages
 
 Go inside cloned project folder and paste `npm i` in terminal.
 
-##### Run application in terminal.
+#### Run application in terminal.
 
 Paste `npm start`
 
@@ -18,7 +18,7 @@ Paste `npm start`
 
 Paste `git clone https://github.com/aniketpandey2912/admitcard-backend-mysql.git` in terminal.
 
-##### Install packages
+#### Install packages
 
 Go inside cloned project folder and paste `npm i` in terminal.
 
@@ -30,13 +30,12 @@ Paste `npm run server`
 
 ** Enter valid details, you can follow below pictures **
 
-<p align="center"><img src="./readme_images/1.png" alt="project-image" width="500" height="250 ></p>
-<p align="center"><img src="./readme_images/2.png" alt="project-image" width="500" height="250 ></p>
-<p align="center"><img src="./readme_images/3.png" alt="project-image" width="500" height="250 ></p>
+<p align="center"><img src="./readme_images/1.png" alt="project-image" width="500" height="350 ></p>
+<p align="center"><img src="./readme_images/2.png" alt="project-image" width="500" height="350 ></p>
+<p align="center"><img src="./readme_images/3.png" alt="project-image" width="500" height="350 ></p>
 
-#### For Code Base, checkout repos :
+#### For Code Base, checkout repos
 
-| Team members       | Github-profiles                                               |
-| ------------------ | ------------------------------------------------------------- |
-| Frontend Repo Link | <https://github.com/aniketpandey2912/admitcard-frontend>      |
-| Backend Repo Link  | <https://github.com/aniketpandey2912/admitcard-backend-mysql> |
+| ---------- | ------------------------------------------------------------- |
+| Frontend | <https://github.com/aniketpandey2912/admitcard-frontend> |
+| Backend | <https://github.com/aniketpandey2912/admitcard-backend-mysql> |
