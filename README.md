@@ -30,9 +30,9 @@ Paste `npm run server`
 
 ** Enter valid details, you can follow below pictures **
 
-<img src="https://github.com/aniketpandey2912/admitcard-frontend/blob/master/readme_images/1.png?raw=true" alt="project-screenshot" width="500" height="250/">
-<img src="https://github.com/aniketpandey2912/admitcard-frontend/blob/master/readme_images/2.png?raw=true" alt="project-screenshot" width="500" height="250/">
-<img src="https://github.com/aniketpandey2912/admitcard-frontend/blob/master/readme_images/3.png?raw=true" alt="project-screenshot" width="500" height="250/">
+<img src="https://github.com/aniketpandey2912/admitcard-frontend/blob/master/readme_images/1.png?raw=true" alt="project-screenshot" width="500" height="350/">
+<img src="https://github.com/aniketpandey2912/admitcard-frontend/blob/master/readme_images/2.png?raw=true" alt="project-screenshot" width="500" height="350/">
+<img src="https://github.com/aniketpandey2912/admitcard-frontend/blob/master/readme_images/3.png?raw=true" alt="project-screenshot" width="500" height="350/">
 
 ### 🌐For Code Base, checkout repos 👇
 
