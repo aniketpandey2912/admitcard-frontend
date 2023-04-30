@@ -15,7 +15,7 @@ const styles = StyleSheet.create({
     flexDirection: "column",
     rowGap: "10px",
     backgroundColor: "black",
-    width: "40%",
+    // width: "40%",
     margin: "auto",
     padding: "20px",
   },

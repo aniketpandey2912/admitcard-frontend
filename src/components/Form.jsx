@@ -1,6 +1,7 @@
 import {
   Box,
   Button,
+  Center,
   Heading,
   Input,
   VStack,
@@ -128,7 +129,7 @@ const Form = () => {
     <Box w="100%" textAlign="center">
       <Heading size="lg">Generate Admitcard</Heading>
       <VStack
-        w="30%"
+        w={{ base: "95%", sm: "80%", md: "50%", lg: "40%" }}
         m="auto"
         boxShadow="rgba(0, 0, 0, 0.24) 0px 3px 8px"
         p="40px 20px"
@@ -171,7 +172,11 @@ const Form = () => {
         </Box>
       )}
 
-      {generate && <Admitcard {...admitcardInfo} />}
+      {generate && (
+        <Center w={{ base: "90%", sm: "80%", md: "60%", lg: "40%" }} m="auto">
+          <Admitcard {...admitcardInfo} />{" "}
+        </Center>
+      )}
     </Box>
   );
 };

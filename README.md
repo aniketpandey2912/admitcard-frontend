@@ -14,7 +14,22 @@ Paste `npm start`
 
 ** Note : You also need to clone backend repository and run the backend server along with frontend to use application in action. So follow below instructions **
 
+## For Backend
+1. **Setup database in you localsystem**
+2. You can use **MySQL Workbench**
+3. Database and table name info : 
+    - Database name : 'admitcarddb'
+    - Table name : 'admitcard'
+4. Table 'admitcard' Schema goes like this
+    - id --> int, not null, primary key.
+    - name --> varchar, not null.
+    - phone --> varchar, not null.
+    - school --> varchar, not null.
+    - class --> varchar, not null.
+    - roll_no --> int, not null, unique.
+    - address --> varchar, not null.
 ## Clone the backend repo
+
 
 Paste `git clone https://github.com/aniketpandey2912/admitcard-backend-mysql.git` in terminal.
 
